@@ -4,11 +4,13 @@ import { Component, Input } from '@angular/core';
   selector: 'app-square',
   imports: [],
   template: `
-    <p>
-      {{ value }}
-    </p>
+    <div>
+      <p>
+        {{ value }}
+      </p>
+    </div>
   `,
-  styles: ``
+  styleUrl: './square.component.scss'
 })
 export class SquareComponent {
   @Input() value: 'X' | 'O' | null = null;
