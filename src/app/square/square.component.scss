@@ -1,5 +1,5 @@
 div {
-    border: 1px solid gray;
+    border: 1px solid var(--grid-color);
     height: 128px;
     display: flex;
     align-items: center;
@@ -7,5 +7,18 @@ div {
 }
 
 div:hover {
-    background-color: gray;
-  }
+    background-color: var(--hover-color);
+}
+
+p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.player-x {
+    color: var(--player-x-color);
+}
+
+.player-o {
+    color: var(--player-o-color);
+}

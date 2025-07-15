@@ -3,3 +3,7 @@ main {
     grid-template-columns: repeat(3, minmax(0, 128px));
     grid-gap: 0px;
 }
+
+h1 {
+    color: var(--win-line-color);
+}

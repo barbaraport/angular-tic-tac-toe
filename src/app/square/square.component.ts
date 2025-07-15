@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   template: `
     <div>
-      <p>
+      <p [className]="value === 'X' ? 'player-x' : 'player-o'">
         {{ value }}
       </p>
     </div>
