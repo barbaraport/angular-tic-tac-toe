@@ -8,7 +8,7 @@ import { SquareComponent } from '../square/square.component';
   styleUrl: './board.component.scss'
 })
 export class BoardComponent implements OnInit {
-  squares: any[] = [];
+  squares: ('X' | 'O' | null)[] = [];
   xIsNext: boolean = false;
   winner: string | null = null;
 
@@ -66,5 +66,9 @@ export class BoardComponent implements OnInit {
     }
 
     return null;
+  }
+
+  isDraw(): boolean {
+    return !this.winner && this.squares.every(square => square !== null);
   }
 }

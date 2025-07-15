@@ -1,6 +1,9 @@
 @if (winner) {
     <h1>Player {{ winner }} won the game!</h1>
 }
+@else if (isDraw()) {
+    <h1>It's a draw.</h1>
+}
 @else {
     <h1>Current player: {{ currentPlayer }}</h1>
 }
