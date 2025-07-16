@@ -8,7 +8,7 @@
     <h1>Current player: {{ currentPlayer }}</h1>
 }
 
-<button (click)="newGame()">Start new game</button>
+<app-start-button [newGame]="newGame.bind(this)"></app-start-button>
 
 <main>
     @for (square of squares; track $index) {

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { SquareComponent } from '../square/square.component';
+import { StartButtonComponent } from '../start-button/start-button.component';
 
 @Component({
   selector: 'app-board',
-  imports: [SquareComponent],
+  imports: [SquareComponent, StartButtonComponent],
   templateUrl: './board.component.html',
   styleUrl: './board.component.scss'
 })
