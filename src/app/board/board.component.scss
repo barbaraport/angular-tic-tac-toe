@@ -1,3 +1,9 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 128px));
@@ -6,4 +12,5 @@ main {
 
 h1 {
     color: var(--win-line-color);
+    margin: 0;
 }
